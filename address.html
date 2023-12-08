@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Page</title>
+    <link rel="stylesheet" href="assets/css/address.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Shipping Address</h2>
+        <form id="addressForm">
+            <label for="name"> Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Select your city</option>
+                <option value="city1">Panchkula </option>
+                <option value="city2">Patiala </option>
+                <option value="city3">Shimla </option>
+            </select>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="" disabled selected>Select your state</option>
+                <option value="state1">Haryana</option>
+                <option value="state2">Punjab</option>
+                <option value="state3">Himachal</option>
+            </select>
+
+            <label for="pinCode">PIN Code:</label>
+            <input type="text" id="pinCode" name="pinCode"  maxlength="6">
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+
+    <script src="assets/js/address.js">
+    </script>
+</body>
+</html>
